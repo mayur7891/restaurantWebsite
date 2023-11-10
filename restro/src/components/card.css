@@ -1,0 +1,21 @@
+.menu-backg{
+    margin-top: 50px;
+    background: url("https://wallpapers.com/images/hd/restaurant-background-2ez77umko2vj5w02.jpg");
+    object-fit: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.text-center{
+    font-size: 5rem;
+    color: white;
+    font-weight: 800;
+}
+
+.menucard-bg{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.check-out{
+    scroll-behavior: smooth;
+}

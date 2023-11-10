@@ -1,0 +1,171 @@
+/* Custom CSS for the food item card */
+html{
+    scroll-behavior: smooth;
+}
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out; 
+    width: 80%; /* Reduce the card width */
+    max-width: 300px; 
+    height:654.2px;
+    margin: 0 auto; /* Center the card horizontally */
+}
+
+  
+
+.pricerate{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.category-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.img-container{
+    height: 300px;
+    overflow: hidden;
+    border-bottom-left-radius: 30px;
+   
+}
+.img-container img{
+    
+    object-fit:cover;
+    height: 100%;
+    width: 100%;
+    transition: transform 500ms;
+}
+
+.img-container:hover img{
+    transform: scale(1.1);
+}
+
+.btn.category-button{
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 50ms ease-in-out; 
+    border-radius: 30px;
+    font-size: 1.2rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+   margin-right: 10px;
+}
+
+.btn.category-button:hover{
+    transform: scale(1.05);
+    background-color: #ff6600;
+    color: white;
+}
+
+
+.card-title {
+    font-size: 1.5rem;
+    color: #ff6600; /* Orange title color */
+    font-weight: bold; /* Bold font for the title */
+    text-transform: uppercase; /* Uppercase title text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for title */
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #ffffff; /* Darker text color */
+    line-height: 1.4; /* Increase line height for better readability */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Text shadow for description */
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #ff4500; /* Dark orange for the price */
+    font-weight: bold; /* Bold font for the price */
+    margin-top: 10px; /* Add some space between description and price */
+    margin-bottom: 0px;
+}
+
+.star-rating {
+    font-size: 1.5rem;
+    margin-top: 4.6px;
+    margin-bottom: 0px;
+    color: #ffcc00; /* Yellow for star rating */
+}
+
+.card-footer {
+    border: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.btn {
+    background-color: #ff4500; /* Slightly darker orange button background */
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff3300; /* Darker shade on hover */
+}
+
+/* Centering the star ratings */
+.card .d-flex .text-warning {
+    margin: 0;
+}
+
+/* Spacing and padding */
+.card-body {
+    padding: 20px;
+    border-bottom: 0.6px solid white;
+}
+
+.card-footer {
+    padding: 10px;
+}
+.add-to-cart-button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+    background-color: #ff4500;
+}
+
+.card-bg{
+    background-color: #0c0c0c;
+}
+
+
+.plusminus-btn{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #ff6600; */
+    /* color: #fff; */
+    background-color: rgb(219, 204, 204);
+    border: none;
+    font-size:1.2rem;
+    border-radius: 5px;
+    padding: 10px 20px;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.plus-btn,.minus-btn{
+    cursor: pointer;
+}
+
+/* Responsiveness for small screens */
+@media (max-width: 576px) {
+    .card {
+        margin-bottom: 1rem;
+    }
+}

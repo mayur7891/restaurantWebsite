@@ -1,0 +1,17 @@
+/* CSS for larger screens (min-width: 768px) */
+@media (min-width: 768px) {
+    .booking-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* CSS for smaller screens (max-width: 768px) */
+  @media (max-width: 768px) {
+    .booking-info {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

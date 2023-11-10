@@ -1,0 +1,12 @@
+.mycart{
+    padding-top: 2.5rem;
+}
+
+.empty-cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: center;
+    font-size: 2rem;
+    flex-direction: column;
+}

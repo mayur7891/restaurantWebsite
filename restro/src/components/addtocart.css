@@ -1,0 +1,29 @@
+.cart-bar{
+    position: sticky;
+    bottom: 0;
+    left:0;
+    right:0;
+    padding: 18px;
+    background-color: rgb(31, 155, 26);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 23px;
+}
+
+.cost h3{
+    color: white;
+}
+
+.cost h5{
+    color: white;
+}
+
+.view-cart h3{
+    color: white;
+}
+
+.view-cart a{
+    color: white;
+}
+

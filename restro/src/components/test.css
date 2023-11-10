@@ -1,0 +1,49 @@
+Add this CSS to your stylesheet or a separate CSS file
+.samplestyle {
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+  }
+  
+  .carousel-inner .carousel-item {
+    border: 2px solid #ddd; /* Add border to carousel items */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Add a box shadow */
+  }
+  
+  .carousel-inner .carousel-item.active {
+    background-color: yellow; /* Yellow background for the center item */
+    transform: scale(1.1); /* Scale the center item */
+    width: 70%; /* Adjust the width of the center item */
+  }
+  
+  .carousel-item .testimonial-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .testimonial-content i {
+    color: #f9a825; /* Custom text color for the quote icon */
+  }
+  
+  .testimonial-content p {
+    font-size: 16px;
+  }
+  
+  .testimonial-details {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .testimonial-avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .testimonial-info {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+  

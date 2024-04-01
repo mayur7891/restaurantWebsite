@@ -6,8 +6,8 @@ import 'react-datepicker/dist/react-datepicker.css';
 const Booking = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [dateTime, setDateTime] = useState(new Date()); // Initialize with the current date and time
-  const [numPeople, setNumPeople] = useState(''); // Initialize with an empty string
+  const [dateTime, setDateTime] = useState(new Date()); 
+  const [numPeople, setNumPeople] = useState(''); 
   const [specialRequest, setSpecialRequest] = useState('');
 
   const navigate = useNavigate();
@@ -24,7 +24,7 @@ const Booking = () => {
     // Parse the user data from localStorage
     const user = JSON.parse(userData);
   
-    const formattedDateTime = dateTime.toISOString().slice(0, 19).replace('T', ' '); // Format the dateTime
+    const formattedDateTime = dateTime.toISOString().slice(0, 19).replace('T', ' '); 
   
     console.log('Name:', name);
     console.log('Email:', email);
@@ -37,7 +37,7 @@ const Booking = () => {
       name,
       email,
       dateTime: formattedDateTime,
-      numberOfPeople: numPeople, // Use the correct field name
+      numberOfPeople: numPeople, 
       specialRequest,
       userId: user.userId, // Include the user ID
     };
@@ -59,7 +59,7 @@ const Booking = () => {
             name,
             visitingDate: dateTime,
             numPeople,
-            tableID: result.tableID, // You need to determine the table ID
+            tableID: result.tableID, 
           },
         });
       } else {

@@ -1,8 +1,8 @@
-const mysql = require('mysql2/promise'); // Import the promise-compatible version of mysql2
+const mysql = require('mysql2/promise'); 
 const express = require('express');
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt'); // Import the bcrypt library
+const bcrypt = require('bcrypt'); 
 const cron = require('node-cron');
 const port = 5000;
 const dotenv = require('dotenv');
@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// Create a database connection using the promise-compatible version
+
 const db = mysql.createPool({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
@@ -24,7 +24,6 @@ const db = mysql.createPool({
 });
 
 
-// Define SQL queries
 const dataSql = 'SELECT * FROM Menu';
 const categorySql = 'SELECT DISTINCT category FROM Menu';
 
@@ -72,7 +71,7 @@ app.post('/signup', async (req, res) => {
 
     await db.query(signUpSql, values);
 
-    // Fetch the newly created user's ID
+ 
     const getUserIdSql = 'SELECT id FROM users WHERE email = ?';
     const [userResult] = await db.query(getUserIdSql, [email]);
 
@@ -111,7 +110,7 @@ app.post('/signin', async (req, res) => {
 
     if (isPasswordMatch) {
       console.log('Login successful');
-      // Return the user ID along with the success message
+      
       return res.json({ message: 'Success', userId: user.id });
     } else {
       console.log('Login failed: Invalid password');
@@ -277,7 +276,7 @@ async function markTableAsUnavailable(tableID, dateTime) {
 
     // Extract the date and time components
     const slotDate = new Date(dateTime);
-    slotDate.setDate(slotDate.getDate() ); // Reduce the date by 1 day
+    slotDate.setDate(slotDate.getDate() );
 
     const slotTime = dateTime.getHours();
 
@@ -292,7 +291,7 @@ async function markTableAsUnavailable(tableID, dateTime) {
     const [rows, fields] = await db.query(selectSql, [tableID, formattedSlotDate]);
 
     if (rows.length === 1) {
-      const slotData = rows[0].slot; // No need to parse if it's already an object
+      const slotData = rows[0].slot;
 
       // Find the slot that matches the specified time
       const matchingSlot = slotData.slots.find(slot => {

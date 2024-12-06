@@ -3,7 +3,7 @@ import './orderconfirmationdialog.css';
 
 const OrderConfirmationDialog = ({ isOpen, onClose }) => {
   if (!isOpen) {
-    return null; // Do not render the dialog if it's not open
+    return null // Do not render the dialog if it's not open
   }
 
   return (

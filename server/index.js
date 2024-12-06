@@ -123,24 +123,7 @@ app.post('/signin', async (req, res) => {
 });
 
 
-// API endpoint for booking a table
-// app.post('/book', (req, res) => {
-//   const { name, email, dateTime, specialRequest } = req.body;
-  
-//   // You can add validation for the input data here if needed
-  
-//   // Insert the booking data into the database
-//   const bookTableSql = 'INSERT INTO Bookings (name, email, dateTime, specialRequest) VALUES (?, ?, ?, ?)';
-//   const values = [name, email, dateTime, specialRequest];
-  
-//   db.query(bookTableSql, values, (err, data) => {
-//     if (err) {
-//       return res.status(500).json({ error: 'Internal server error' });
-//     }
-    
-//     return res.status(200).json({ message: 'Table booked successfully' });
-//   });
-// });
+
 
 
 //Booking Logic
